@@ -46,6 +46,12 @@
     <script>
         const burger = document.getElementById('burger');
         const menu = document.getElementById('menu');
+        const menuLinks = document.querySelectorAll('.menu__link');
+        menuLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                closeMenu();
+            });
+        });
 
         function openMenu() {
             menu.classList.add('menu--open');
@@ -67,6 +73,7 @@
                 // кликнули вне меню и не по бургеру
                 closeMenu();
             }
+
         });
 
     </script>
@@ -484,7 +491,7 @@
             };
 
             function setError(name, message) {
-                
+
                 const errorEl = document.querySelector(
                     `.order__error[data-error-for="${name}"]`
                 );
