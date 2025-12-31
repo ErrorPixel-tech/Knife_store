@@ -1,0 +1,19 @@
+
+/* Десктоп и выше */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .process__list {
+    max-width: 500px;
+    /* background-color: black; */
+    margin: 0 auto;
+  }
+
+  .slider__track {
+    overflow: initial;
+  }
+}

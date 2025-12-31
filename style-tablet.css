@@ -1,0 +1,42 @@
+  :root {
+    --padding-section: 50px;
+  }
+
+/* Планшет и выше */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+
+
+  .process__list {
+    /* padding: 0 40px; */
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .process__content {
+    max-width: 300px;
+  }
+
+  .knife__img {
+    height: 250px;
+  }
+
+  .process,
+  .order,
+  .delivery,
+  .portfolio,
+  .hero,
+  .page__header,
+  .footer {
+    padding-left: var(--padding-section);
+    padding-right: var(--padding-section);
+  }
+
+  .portfolio__title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
